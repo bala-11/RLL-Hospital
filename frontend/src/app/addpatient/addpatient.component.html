@@ -1,0 +1,77 @@
+<!-- <div>
+    <h2>Add Patient </h2>
+    <form [formGroup]="patientRef" (ngSubmit)="savePatientDetails()">
+        <label> Patient Name : </label>
+        <input type="text" formControlName="pname"><br/> <br/>
+        <label> Age : </label>
+        <input type="number" formControlName="page"><br/> <br/>
+        <label> Gender :  </label>
+        <input type="gender" formControlName="pgender"><br/><br/>
+        <label> Mobile Number :  </label>
+        <input type="number" formControlName="mobile"><br/><br/>
+        <label> Address : </label>
+        <input type="text" formControlName="paddress"><br/><br/>
+        <label> Email Id : </label>
+        <input type="text" formControlName="emailid"><br/><br/>
+        <label> Symptoms : </label>
+        <input type="text" formControlName="symptoms"><br/><br/>
+        <input type="submit" value="Save Patient"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:green">{{storeMsg}}</span>
+</div> -->
+
+<div class="card">
+    <div class="row g-0">
+        <div class="col-5 col-sm-4">
+            <img src="https://s3.amazonaws.com/freestock-prod/450/freestock_84195904.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+        </div>
+        <div class="col-7 col-sm-8">
+            <div class="card-body">
+                <h5 class="card-title">Add Patient</h5>
+                <form [formGroup]="patientRef" (ngSubmit)="savePatientDetails()">
+                    <div class="form-group">
+                        <!-- <label>Doctor Name</label> -->
+                        <input type="text" id="name" placeholder="Patient Name" formControlName="pname"><br/>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Age</label> -->
+                        <input type="number" id="age" placeholder="Age" formControlName="page"><br/>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Phone Number</label> -->
+                        <input type="number" id="ph" placeholder="Phone Number" formControlName="mobile"><br/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <!-- <label>Email Id</label> -->
+                        <input type="email" id="emid" placeholder="Email Id" formControlName="emailid"><br/>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Address</label> -->
+                        <input type="text" id="add" placeholder="Address" formControlName="paddress"><br/>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Specialization</label> -->
+                        <input type="text" id="spe" placeholder="Symptoms" formControlName="symptoms"><br/>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Specialization</label> -->
+                        <input type="text" id="spe" placeholder="Gender" formControlName="pgender"><br/>
+                    </div>
+                    <!-- <label style="margin-left: 2px;"> Gender:- </label>
+    <input type="radio" id="m" name="Gender" value="Male" formControlName="dgender"/>Male
+    <input type="radio" id="f" name="Gender" value="Female" formControlName="dgender"/>Female<br/> -->
+
+                    <div class="form-group">
+                        <input type="submit" value="Save Patient" class="btn btn-success" /><br/>
+                    </div>
+                    <div class="form-group">
+                        <input type="reset" value="reset" class="btn btn-secondary" /><br/>
+                    </div>
+                </form><br/>
+                <span style="color:green">{{storeMsg}}</span>
+            </div>
+        </div>
+    </div>

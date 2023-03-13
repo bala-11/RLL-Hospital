@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <th> Id |</th>
+        <th> Name |</th>
+        <th> Age |</th>
+        <th> Gender |</th>
+        <th> Email Id |</th>
+        <th> Mobile Number |</th>
+        <th> Status |</th>
+        <th> Symptoms |</th>
+        <th> Address |</th>
+        <!-- <th>Admission</th> -->
+        <th>Discharge </th>
+    </tr>
+    
+    <tr *ngFor="let p of patients">
+        <td>{{p.pid}}</td>
+        <td>{{p.pname}} </td>
+        <td> {{p.page}} </td>
+        <td>{{p.pgender}}</td>
+        <td>{{p.emailid}}</td>
+        <td>{{p.mobile}}</td>
+        <td>{{p.pstatus}}</td>
+        <td>{{p.symptoms}}</td>
+        <td>{{p.paddress}}</td>
+        <td><input type="button" value="Discharge Patient" (click)="dischargePatient(p.pid)"/></td>
+        
+        
+    </tr>
+    </table>
+        
+    

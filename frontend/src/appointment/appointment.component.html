@@ -1,0 +1,43 @@
+<div> 
+<div  *ngIf="flag">
+    <h2>Update Product</h2>
+    <form (ngSubmit)="appointpatient()">
+        <label>Patient id</label>
+        <input type="number" name="pid" [(ngModel)]="pid" readonly /><br/>
+        <label>Doctor id</label>
+        <input type="number" name="dpid" [(ngModel)]="dpid" /><br/>
+
+       
+        
+        <input type="submit" value="Assign Doctor"/>
+    </form>
+</div>
+
+    
+    <table>
+    
+        <tr>
+            <th> Id </th>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Gender </th>
+            
+            <th> Symptoms </th>
+           <th>Status</th>
+        </tr>
+        
+        <tr *ngFor="let p of patients">
+            <td>{{p.pid}}</td>
+            <td>{{p.pname}} </td>
+            <td> {{p.page}} </td>
+            <td>{{p.pgender}}</td>
+            <td>{{p.symptoms}}</td>
+            <td>{{p.pstatus}}</td>
+            
+             
+                <input type="button" value="Appoint Patient" (click)="updatePatient(p)"/>
+                
+            </table>
+</div> 
+        
+    

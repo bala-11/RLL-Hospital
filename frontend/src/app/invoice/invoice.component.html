@@ -1,0 +1,29 @@
+<table>
+    <tr>
+        <th> Id </th>
+        <th> admit date </th>
+        <th> disease</th>
+        <th> doctor fee </th>
+        <th> Medicine cost </th>
+        <th> other charges</th>
+        <th> patient Adress</th>
+        <th> patient mobile</th>
+        <th> patient name</th>
+        <th> release date</th>
+        <th>room charges</th>
+    </tr>
+    
+    <tr *ngFor="let i of invoices">
+        <td>{{i.id}}</td>
+        <td>{{i.admitdate}} </td>
+        <td> {{i.disease}} </td>
+        <td>{{i.doctorfee}}</td>
+        <td>{{i.medicinecost}}</td>
+        <td>{{i.othercharge}}</td>
+        <td>{{i.patientaddress}}</td>
+        <td>{{i.patientmobile}}</td>
+        <td>{{i.patientname}}</td>
+        <td>{{i.releasedate}}</td>
+        <td>{{i.roomcharge}}</td>
+    </tr>
+    </table>

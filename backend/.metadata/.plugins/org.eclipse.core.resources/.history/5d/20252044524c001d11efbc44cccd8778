@@ -1,0 +1,68 @@
+package com.hospital.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Doctor {
+	@Id
+	private int did;
+	private String dname;
+	private String Specialization;
+	private String Phno;
+	private String Emailid;
+	private String Address;
+	private String Status;
+	public int getDid() {
+		return did;
+	}
+	public void setDid(int did) {
+		this.did = did;
+	}
+	public String getDname() {
+		return dname;
+	}
+	public void setDname(String dname) {
+		this.dname = dname;
+	}
+	public String getSpecialization() {
+		return Specialization;
+	}
+	public void setSpecialization(String specialization) {
+		Specialization = specialization;
+	}
+	public String getPhno() {
+		return Phno;
+	}
+	public void setPhno(String phno) {
+		Phno = phno;
+	}
+	public String getEmailid() {
+		return Emailid;
+	}
+	public void setEmailid(String emailid) {
+		Emailid = emailid;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	public String getStatus() {
+		return Status;
+	}
+	public void setStatus(String status) {
+		Status = status;
+	}
+	@Override
+	public String toString() {
+		return "Doctor [did=" + did + ", dname=" + dname + ", Specialization=" + Specialization + ", Phno=" + Phno
+				+ ", Emailid=" + Emailid + ", Address=" + Address + ", Status=" + Status + "]";
+	}
+	
+	
+	
+	
+
+}

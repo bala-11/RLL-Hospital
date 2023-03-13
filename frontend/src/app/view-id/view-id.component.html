@@ -1,0 +1,26 @@
+<!-- <div>
+    <input type="email" id="em" name="email" [(ngModel)]="email"/>
+    <button (click)="viewid(email)" id="id">View Id</button> <br/>
+    <span>
+       {{msg}}
+    </span>
+</div> -->
+<div class="card-group">
+    <div class="card">
+        <img src="https://icons.iconarchive.com/icons/icons-land/medical/256/People-Doctor-Male-icon.png" class="card-img-top" alt="card-group-image">
+        <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <input type="email" id="em" placeholder="Enter Email Id" name="email" [(ngModel)]="email" />
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-secondary" (click)="viewid(email)" id="id">View Id</button>
+        </div>
+    </div>
+</div>
+<span style="color: navy;">
+    <h4>{{msg}}</h4>
+ </span>
+<div class="form-group">
+    <p>Click to <button class="btn btn-outline-secondary"><a routerLink="/main" style="color: black; text-decoration:none">Go Back</a></button></p>
+</div>

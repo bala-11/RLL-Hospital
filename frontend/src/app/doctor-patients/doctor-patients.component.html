@@ -1,0 +1,14 @@
+<div>
+    <table border="1" class="table table-striped">
+        <tr>
+            <th>Patient Name</th>
+            <th>Symptoms </th>
+            <th>Mobile No</th>
+        </tr>
+        <tr *ngFor="let patient of patients">
+            <td>{{patient.pname}}</td>
+            <td>{{patient.symptoms}}</td>
+            <td>{{patient.mobile}}</td>
+        </tr>
+    </table>
+</div>

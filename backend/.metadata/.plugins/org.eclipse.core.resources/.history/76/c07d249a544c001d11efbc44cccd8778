@@ -1,0 +1,30 @@
+package com.hospital.bean;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Doctor {
+	@Id
+	private int did;
+	private String dname;
+	private String Specialization;
+	private String Phno;
+	private String Emailid;
+	private String Address;
+	private String dStatus;
+	private int dage;
+	private String dgender;
+	@OneToMany
+	@JoinColumn(name="dpid")
+	private List<Patient> listOfpat;
+	
+	
+	
+	
+}
+	

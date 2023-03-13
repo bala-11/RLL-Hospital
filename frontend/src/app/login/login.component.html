@@ -1,0 +1,79 @@
+<!-- <div  class="container-fluid"> -->
+<!-- <h2>Login Page</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="signInNow()">
+        <div class="form-group">
+        <input type="number" placeholder="Enter Id" formControlName="id" required/>
+        </div>
+        <div *ngIf="(loginRef.controls['id']?.invalid) && (loginRef.controls['id']?.touched)">
+            <span [hidden]="!loginRef.controls['id'].hasError('required')" style="color: red;">Id is required</span>
+        </div>
+        <div class="form-group">
+        <input type="password" placeholder="Enter password" formControlName="password" required minlength="4"/>
+        </div>
+        <div *ngIf="(loginRef.controls['password']?.invalid) && (loginRef.controls['password']?.touched)">
+            <span [hidden]="!loginRef.controls['password'].hasError('required')" style="color: red;">Password is required</span>
+            <span [hidden]="!loginRef.controls['password'].hasError('minlength')" style="color: red;">Password should contain atleast 4 charaters</span>
+        </div>
+        <input type="radio" name="role" value="doctor" formControlName="role"/>doctor
+        <input type="radio" name="role" value="patient" formControlName="role"/>patient
+        <br>
+        <div class="form-group" >
+            <input type="submit" value="Login" class="btn btn-success"/>
+        </div>
+        <div class="form-group">
+            <input type="reset" value="reset"class="btn btn-secondary"/>
+        </div> -->
+<!-- <input type="submit" value="Sign in" /> -->
+<!-- <input type="reset" value="reset"/> -->
+<!-- <input type="button" (click)="note()" value="note"/> -->
+<!-- </form>
+    <br>
+    <span style="color: red;">{{msg}}</span><br> -->
+<!-- <a routerLink="/signUp">SignUp</a> -->
+<!-- <div class="form-group" >
+        <p>Don't have Account? <button class="btn btn-outline-secondary"><a routerLink="/signUp" style="color: black; text-decoration:none">Create Account</a></button></p>
+    </div> -->
+
+<div class="card">
+    <div class="row g-0">
+        <div class="col-5 col-sm-4">
+            <img src="https://media.istockphoto.com/photos/white-figures-acting-as-doctor-and-patient-picture-id186456840" class="img-fluid w-100" alt="card-horizontal-image">
+        </div>
+        <div class="col-7 col-sm-8">
+            <div class="card-body">
+                <h5 class="card-title">Login Page</h5>
+                <form [formGroup]="loginRef" (ngSubmit)="signInNow()">
+                    <div class="form-group">
+                        <input type="text" id="id" placeholder="Enter Email" formControlName="emailid" required/>
+                    </div>
+                    <div *ngIf="(loginRef.controls['emailid']?.invalid) && (loginRef.controls['emailid']?.touched)">
+                        <span [hidden]="!loginRef.controls['emailid'].hasError('required')" style="color: red;">EmailId is required</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Enter password" formControlName="password" required minlength="4" />
+                    </div>
+                    <div *ngIf="(loginRef.controls['password']?.invalid) && (loginRef.controls['password']?.touched)">
+                        <span [hidden]="!loginRef.controls['password'].hasError('required')" style="color: red;">Password is required</span>
+                        <span [hidden]="!loginRef.controls['password'].hasError('minlength')" style="color: red;">Password should contain atleast 4 charaters</span>
+                    </div>
+                    <input type="radio" name="role" value="doctor" formControlName="role" />doctor
+                    <input type="radio" name="role" value="patient" formControlName="role" />patient
+                    <br>
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn btn-success" />
+                    </div>
+                    <div class="form-group">
+                        <input type="reset" value="reset" class="btn btn-secondary" />
+                    </div>
+                </form>
+                <br>
+                <span style="color: red;">{{msg}}</span><br>
+            </div>
+            <div class="form-group">
+                <p>Don't have Account? <button class="btn btn-outline-secondary"><a routerLink="/signUp" style="color: black; text-decoration:none">Create Account</a></button></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

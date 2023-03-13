@@ -1,0 +1,31 @@
+package com.hospital.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hospital.bean.Doctor;
+import com.hospital.bean.Patient;
+import com.hospital.repo.DoctorRepository;
+import com.hospital.repo.PatientRepository;
+
+@Service
+public class PatientService {
+	@Autowired
+	PatientRepository patrepo;
+	DoctorRepository docrepo;
+	
+	public String savePatientDetails(Patient patient) {
+		patrepo.save(patient);
+		return "patient details saved successfully";
+	}
+	
+	public Doctor getDoctorDetails(Patient patient) {
+		Integer dpid = patient.getDpid();
+		return docrepo.getDoctorById(dpid);
+	}
+	
+	
+
+}

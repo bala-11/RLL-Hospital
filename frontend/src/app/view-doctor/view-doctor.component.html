@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <th> Id </th>
+        <th> Name </th>
+        <th> Age </th>
+        <th> Gender </th>
+        <th> Email Id </th>
+        <th> Mobile Number </th>
+        <th> Status </th>
+        
+        <th> Address </th>
+        <th>Specialization</th>
+    </tr>
+    
+    <tr *ngFor="let d of doctors">
+        <td>{{d.did}}</td>
+        <td>{{d.dname}} </td>
+        <td> {{d.dage}} </td>
+        <td>{{d.dgender}}</td>
+        <td>{{d.emailid}}</td>
+        <td>{{d.phno}}</td>
+        <td>{{d.dstatus}}</td>
+        
+        <td>{{d.address}}</td>
+        <td>{{d.specialization}}</td>
+         <td><input type="button" value="Approve Doctor" (click)="approveDoctor(d.did)" /></td> 
+        <td> <input type="button" value="Delete Doctor" (click)="deleteDoctor(d.did)" /></td> 
+        <td> <input type="button" value="Reject Doctor" (click)="rejectDoctor(d.did)" /></td> 
+    </tr>
+    </table>
+        
+    

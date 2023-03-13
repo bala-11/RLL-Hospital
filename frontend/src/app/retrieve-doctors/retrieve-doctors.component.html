@@ -1,0 +1,10 @@
+<div>
+    <h2> List of doctors</h2>
+<span *ngFor="let d of doctor">
+    
+    <span>{{d.did}} {{d.address}} {{d.dage}} {{d.dgender}} {{d.dname}} {{d.dstatus}} {{d.emailid}} {{d.phno}} {{d.specialization}}</span>
+    <input type="button" value="delete" (click)="deleteDoctor(d.did)"/>
+    <input type="button" value="approve" (click)="approveDoctor(d.did)"/>
+    <input type="button" value="reject" (click)="rejectDoctor(d.did)"/>
+</span>
+</div>

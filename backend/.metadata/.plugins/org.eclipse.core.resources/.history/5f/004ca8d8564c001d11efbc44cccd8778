@@ -1,0 +1,5 @@
+package com.hospital.repo;
+
+public interface LoginRepository {
+
+}

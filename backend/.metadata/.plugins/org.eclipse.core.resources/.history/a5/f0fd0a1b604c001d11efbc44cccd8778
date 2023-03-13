@@ -1,0 +1,27 @@
+package com.hospital.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.expression.spel.support.ReflectivePropertyAccessor.OptimalPropertyAccessor;
+import org.springframework.stereotype.Service;
+
+import com.hospital.bean.Patient;
+import com.hospital.repo.DoctorRepository;
+import com.hospital.repo.PatientRepository;
+
+@Service
+public class DoctorService {
+	@Autowired
+	DoctorRepository docrepo;
+	@Autowired
+	PatientRepository patrepo;
+	
+	public List<Patient> viewPatient(int did) {
+		List<Patient> result = patrepo.findByDpid(did);
+		return result;
+	}
+	
+
+}

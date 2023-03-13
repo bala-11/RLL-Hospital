@@ -1,0 +1,35 @@
+body {
+    color: black;
+    background-color: #b6bde7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    background: blue;
+    font-weight: bold;
+    padding: 1% 20%;
+}
+
+.form-content {
+    padding: 10%;
+    margin-bottom: 10.5%;
+}
+
+.form-control {
+    border-radius: 1.5rem;
+}
+
+.btnSubmit {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1%;
+    width: 7%;
+    cursor: pointer;
+    background: blue;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: blue;
+}

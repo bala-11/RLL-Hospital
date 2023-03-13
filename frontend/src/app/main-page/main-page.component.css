@@ -1,0 +1,22 @@
+.card-group {
+    width: 60%;
+    margin-top: 5%;
+}
+
+img {
+    height: 200px;
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.card {
+    margin: 30px;
+    /* background-color: rgb(212, 167, 167); */
+    background-color: rgb(251, 221, 165);
+    width: 25%;
+}
+
+a {
+    text-decoration: none;
+}
